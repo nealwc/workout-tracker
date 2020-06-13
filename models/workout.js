@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const WorkoutSchema = new Schema({
+const workoutSchema = new Schema({
  workoutType: {
      type: String,
      required: "Workout type is required"
@@ -32,6 +32,6 @@ distance: {
 }
 });
 
-const Workout = mongoose.model("Workout", WorkoutSchema);
+const Workout = mongoose.model("Workout", workoutSchema);
 
 module.exports = Workout;
