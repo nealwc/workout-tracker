@@ -11,15 +11,28 @@ router.post("/api/workouts", ({ body }, res) => {
       });
   });
 
-  router.get("/api/workouts/range", (req, res) => {
+  router.get("/api/workouts", (req, res) => {
     Workout.find({})
-      .then(dbWorkout => {
-        res.json(dbWorkout);
-        console.log(dbWorkout);
+      .then(dbWorkouts => {
+        res.json(dbWorkouts);
+        console.log(dbWorkouts);
       })
       .catch(err => {
         res.json(err);
       });
   });
+
+  router.get("/api/workouts/range", (req, res) => {
+    Workout.find({})
+      .then(dbWorkouts => {
+        res.json(dbWorkouts);
+        console.log(dbWorkouts);
+      })
+      .catch(err => {
+        res.json(err);
+      });
+  });
+
+//   router.put("/api/workouts/:id", )
 
   module.exports = router;
