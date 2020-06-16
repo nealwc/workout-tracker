@@ -34,24 +34,6 @@ router.get("/api/workouts/range", (req, res) => {
         });
 });
 
-//   router.put("api/workouts/:id", ({ body }, res) => {
-//     Workout.findByIdAndUpdate(
-//       {
-//         _id: mongojs.ObjectId(body.params.id)
-//       },
-//       {
-//         $push: {
-//           exercises: body
-//         }
-//       })
-//       .then(dbWorkout => {
-//           res.json(dbWorkout)
-//       })
-//       .catch(err => {
-//         res.json(err);
-//       });
-//   });
-
 router.put("/api/workouts/:id", ({ body, params }, res) => {
     Workout.findByIdAndUpdate(
         params.id,
