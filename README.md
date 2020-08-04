@@ -22,3 +22,5 @@ Carter Neal [@nealwc](http://github.com/nealwc)
 ## Heroku Deployment
 
 [Workout Tracker](https://obscure-taiga-88340.herokuapp.com/) is deployed on Heroku.
+
+![Workout Tracker](./public/Workout-Tracker.png)
